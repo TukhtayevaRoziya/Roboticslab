@@ -1,0 +1,132 @@
+.headerShadow{
+  box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important;
+}
+
+.wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f6f6f6;
+  padding: .5rem 10%;
+}
+
+.social_networks img{
+  width: 28px;
+  padding: 0 .25rem!important;
+}
+
+.social_networks,
+.contactUs{
+  display: flex;
+}
+
+.contactUs a{
+  text-decoration: none;
+  color: #3490dc;
+  margin: 0 calc(.40rem / 2)!important;
+}
+
+.btn2{
+  cursor: pointer;
+  padding: .25rem .5rem;
+  font-size: .7875rem;
+  line-height: 1.5;
+  border-radius: .2rem;
+  color: #fff;
+  background-color: #3490dc;
+  border-color: #3490dc;
+  outline: none;
+  border: none;
+  margin-left: .4rem;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+}
+
+.form input{
+  width: 100%;
+    height: calc(1.6em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: .9rem;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    outline: none;
+}
+
+.form input:focus{
+  color: #495057;
+  background-color: #fff;
+  border-color: #a1cbef;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgb(52 144 220 / 25%);
+}
+
+.form span{
+  padding-bottom: calc(.375rem + 1px);
+  margin-top: 1rem;
+}
+
+.form span:first-child{
+  margin-top: 0 !important;
+}
+
+.form select{
+  transition: background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  
+  width: 100%;
+  height: calc(1.6em + .75rem + 2px);
+  padding: .375rem 1.75rem .375rem .75rem;
+  font-size: .9rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #495057;
+  vertical-align: middle;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  outline: none;
+}
+
+.endHeader{
+  padding: .5rem 10%;
+  font-weight: 700!important;
+  font-size: 1.125rem;
+  line-height: inherit;
+  white-space: nowrap;
+}
+
+.endHeader img{
+  height: 48px;
+}
+
+@media screen and (max-width:480.9px) {
+  .contactUs span{
+    display: none;
+  }
+}
+@media screen and (max-width:640.9px) {
+  .contactUs .firstA{
+    display: none;
+  }
+}
+
+@media screen and (max-width:980.9px) {
+  .wrapper{
+    flex-direction: column;
+  }
+  .social_networks{
+    margin-bottom: .3rem;
+  }
+  .endHeader{
+    padding: .5rem 5%;
+    text-align: center;
+  }
+}
