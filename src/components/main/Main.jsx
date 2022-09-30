@@ -18,7 +18,7 @@ const Main = () => {
         <span> Ism va familiyangiz</span>
         <input type={'text'} placeholder="Ismingizni kiriting" required />
         <span className={styles.select}>Kursni tanlang</span>
-        <select>
+        <select style={{width:'100%', overflow:'scroll'}}>
           <option value={0}>C++</option>
           <option value={1}>C# Dotnet kurslari</option>
           <option value={2}>Robototexnika</option>
