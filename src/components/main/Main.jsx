@@ -31,6 +31,12 @@ const Main = () => {
           <option value={9}>Rus tili</option>
           <option value={10}>Arab tili</option>
           <option value={11}>Java</option>
+          <option value={12}>Matematika</option>
+          <option value={13}>Web dasturlash kursi</option>
+          <option value={14}>SMM pro</option>
+          <option value={15}>Python</option>
+          <option value={16}>iOS kursi</option>
+          <option value={17}>Android kursi</option>
         </select>
         <input type="submit" value='Davom etish' className={styles.btn} />
       </form>
