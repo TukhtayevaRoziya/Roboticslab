@@ -3,6 +3,34 @@ import React from 'react'
 import styles from './Main.module.css'
 
 const Main = () => {
+  const data = [
+    { id: 0, name: 'C++' },
+    { id: 0, name: 'C++' },
+    { id: 1, name: 'C# Dotnet kurslari' },
+    { id: 2, name: 'Robototexnika' },
+    { id: 3, name: 'Robokids' },
+    { id: 4, name: 'Algoritmlash' },
+    { id: 5, name: 'IELTS' },
+    { id: 6, name: 'General English' },
+    { id: 7, name: 'Kiberxavfsizlik' },
+    { id: 8, name: 'videomakerlik' },
+    { id: 9, name: 'Rus tili' },
+    { id: 10, name: 'Arab tili' },
+    { id: 11, name: 'Java' },
+    { id: 12, name: 'Matematika' },
+    { id: 13, name: 'Web dasturlash kursi' },
+    { id: 14, name: 'SMM pro' },
+    { id: 15, name: 'Python' },
+    { id: 16, name: 'iOS kursi' },
+    { id: 17, name: 'Android kursi' },
+  ]
+
+  const dataMap = data.map((d) => (
+    <option key={d.id} value={d.id}>
+      {d.name}
+    </option>
+  ))
+
   return (
     <div className={styles.body}>
       <h2>Kursga yozilish</h2>
@@ -18,27 +46,8 @@ const Main = () => {
         <span> Ism va familiyangiz</span>
         <input type={'text'} placeholder="Ismingizni kiriting" required />
         <span className={styles.select}>Kursni tanlang</span>
-        <select style={{width:'100%', overflow:'scroll'}}>
-          <option value={0}>C++</option>
-          <option value={1}>C# Dotnet kurslari</option>
-          <option value={2}>Robototexnika</option>
-          <option value={3}>Robokids</option>
-          <option value={4}>Algoritmlash</option>
-          <option value={5}>IELTS</option>
-          <option value={6}>General English</option>
-          <option value={7}>Kiberxavfsizlik</option>
-          <option value={8}>videomakerlik</option>
-          <option value={9}>Rus tili</option>
-          <option value={10}>Arab tili</option>
-          <option value={11}>Java</option>
-          <option value={12}>Matematika</option>
-          <option value={13}>Web dasturlash kursi</option>
-          <option value={14}>SMM pro</option>
-          <option value={15}>Python</option>
-          <option value={16}>iOS kursi</option>
-          <option value={17}>Android kursi</option>
-        </select>
-        <input type="submit" value='Davom etish' className={styles.btn} />
+        <select style={{ width: '100%', overflow: 'scroll' }}>{dataMap}</select>
+        <input type="submit" value="Davom etish" className={styles.btn} />
       </form>
     </div>
   )
